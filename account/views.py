@@ -36,13 +36,9 @@ class SigninView(LoginView):
     success_url = reverse_lazy('index-page')
 
 
-class LogoutView():
-    pass
-
-
 class ForgotPassword():
-    pass
 
 
-class ChangePassword():
+
+#class ChangePassword():
     pass

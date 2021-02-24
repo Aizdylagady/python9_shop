@@ -1,15 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'includes/base.html' %}
+{% block title %}Shop{% endblock title %}
+{% block body %}
     <h1>Welcome to our grocery shop!</h1>
-    <p><a href="{% url 'registration' %}">Регистрация</a></p>
+
     <h2>Categories:</h2>
     {% for category in categories %}
         <p><a href="{% url 'products-list' category.slug %}">{{ category.name }}</a></p>
     {% endfor %}
-</body>
-</html>
+{% endblock body %}
